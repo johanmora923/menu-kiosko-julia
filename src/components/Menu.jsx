@@ -58,7 +58,7 @@ const Menu = ({ addToCart }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {dishes.map(dish => (
                     <div key={dish.id} className="bg-white shadow-md rounded-lg overflow-hidden">
-                        <img src={dish.image} alt={dish.name} className="w-full h-auto sm:h-48 object-cover"/>
+                        <img src={dish.image} alt={dish.name} className=" w-full sm:h-48 object-cover  max-h-[300px]"/>
                         <div className="p-4">
                             <h2 className="text-xl font-bold mb-2">{dish.name}</h2>
                             <p className="text-gray-700 mb-4">${dish.price}</p>
