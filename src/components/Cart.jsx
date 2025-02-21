@@ -22,7 +22,6 @@ const Cart = ({ cart, removeFromCart }) => {
                 {cart.map((item, index) => (
                     <li key={index} className="flex justify-between items-center border-b p-2">
                         <span>{item.name} (x{item.quantity})</span>
-                        <span>${item.price * item.quantity}</span>
                         <button
                             className="bg-red-500 text-white px-2 py-1 rounded hover:bg-red-600 flex items-center"
                             onClick={() => removeFromCart(index)}
@@ -34,7 +33,6 @@ const Cart = ({ cart, removeFromCart }) => {
             </ul>
             <div className="mt-4">
                 <div className='flex flex-col'>
-                    <p className="text-xl font-bold">Total: ${total}</p>
                     <span className='mt-3 mb-5'>Mas el 10% del servicio playero
                     </span>
                 </div>

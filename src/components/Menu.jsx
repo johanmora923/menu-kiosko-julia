@@ -61,7 +61,6 @@ const Menu = ({ addToCart }) => {
                         <img src={dish.image} alt={dish.name} className=" w-full sm:h-48 object-cover  max-h-[300px]"/>
                         <div className="p-4">
                             <h2 className="text-xl font-bold mb-2">{dish.name}</h2>
-                            <p className="text-gray-700 mb-4">${dish.price}</p>
                             <div className="flex items-center mb-4">
                                 <button
                                     className="bg-gray-200 px-2 py-1 rounded-l hover:bg-gray-300"
