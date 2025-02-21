@@ -10,7 +10,7 @@ const Cart = ({ cart, removeFromCart }) => {
     const sendOrder = () => {
         const orderDetails = cart.map(item => `${item.name} (x${item.quantity}) - $${item.price * item.quantity}`).join('\n');
         const message = `Hola, soy ${customerName} y quisiera hacer un pedido:\n\n${orderDetails}\n\nTotal: $${total}`;
-        const whatsappUrl = `https://wa.me/584242079712?text=${encodeURIComponent(message)}`;
+        const whatsappUrl = `https://wa.me/584149127107?text=${encodeURIComponent(message)}`;
         window.open(whatsappUrl, '_blank');
     };
 
