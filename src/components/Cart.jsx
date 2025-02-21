@@ -44,7 +44,7 @@ const Cart = ({ cart, removeFromCart }) => {
                         id="customerName"
                         value={customerName}
                         onChange={(e) => setCustomerName(e.target.value)}
-                        className="mr-3 outline-none p-2 border-b border-[#292929] " 
+                        className="mr-3 w-40 outline-none p-2 border-b border-[#292929] " 
                         placeholder="Ingrese su nombre"
                     />
                     <button
@@ -55,7 +55,7 @@ const Cart = ({ cart, removeFromCart }) => {
                     </button>
                 </div>
             </div>
-            <div className='flex text-[#fcfcfc]'>
+            <div className='flex flex-col text-[#fcfcfc]'>
                 <Link to="/">
                     <button className="bg-gray-500 text-white px-4 py-2 mt-20 rounded hover:bg-gray-600">
                         Volver al Menú
